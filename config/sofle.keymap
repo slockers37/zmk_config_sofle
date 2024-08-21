@@ -50,7 +50,9 @@
                             &trans       &trans                &trans                 &trans         &trans    &trans  &trans     &kp N0        &kp PERIOD    &kp EQUAL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_BRI_INC C_BRI_DEC>;
         };
 
         raise_layer {
@@ -80,6 +82,10 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp LG(RIGHT) LG(LEFT)>,
+                <&inc_dec_kp LA(RIGHT) LA(LEFT)>;
         };
 
         layer_4 {
